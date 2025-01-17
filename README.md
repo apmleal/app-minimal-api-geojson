@@ -99,5 +99,6 @@ http://localhost:5555/scalar/v1
   > PUT /localizacao/{id}
 - Deletar uma localização
   > DELETE /localizacao/{id}
-
+- Listagem de categorias
+  > GET /categoria
 
