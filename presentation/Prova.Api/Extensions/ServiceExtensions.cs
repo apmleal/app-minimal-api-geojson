@@ -13,9 +13,10 @@ namespace Prova.Api.Extensions;
 
 public static class ServiceExtensions
 {
-    public static IServiceCollection AddServices(this IServiceCollection services)
+    public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddOpenApi();
+
 
         services.ConfigureHttpJsonOptions(options =>
         {
@@ -35,12 +36,22 @@ public static class ServiceExtensions
 
         services.AddDbContext<ProvaContext>((options) =>
         {
-            options.UseNpgsql("Server=localhost;Port=5432;Database=db_prova;User Id=postgres;Password=postgres;Persist Security Info=True", o => o.UseNetTopologySuite());
+            options.UseNpgsql(configuration.GetConnectionString("DbConnection"), o => o.UseNetTopologySuite());
         });
 
         services.AddServicesApplication<ProvaContext>();
 
+        services.ApplyMigrations();
+
         return services;
+    }
+
+    private static void ApplyMigrations(this IServiceCollection services)
+    {
+        IServiceProvider serviceProvider = services.BuildServiceProvider();
+        using var scope = serviceProvider.CreateScope();
+        var dbContext = scope.ServiceProvider.GetRequiredService<ProvaContext>();
+        dbContext.Database.Migrate();
     }
 
 }

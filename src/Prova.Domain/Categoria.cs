@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-
-namespace Prova.Domain;
+﻿namespace Prova.Domain;
 
 public sealed record Categoria(int Value, string Name)
 {

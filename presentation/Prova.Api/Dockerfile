@@ -12,7 +12,11 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
 COPY ["presentation/Prova.Api/Prova.Api.csproj", "presentation/Prova.Api/"]
+COPY ["src/Prova.Database/Prova.Database.csproj", "src/Prova.Database/"]
+COPY ["src/Prova.Domain/Prova.Domain.csproj", "src/Prova.Domain/"]
+COPY ["presentation/Prova.Application/Prova.Application.csproj", "presentation/Prova.Application/"]
 RUN dotnet restore "./presentation/Prova.Api/Prova.Api.csproj"
 COPY . .
 WORKDIR "/src/presentation/Prova.Api"
