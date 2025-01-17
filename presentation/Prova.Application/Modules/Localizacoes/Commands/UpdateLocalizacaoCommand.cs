@@ -73,6 +73,9 @@ public class UpdateLocalizacaoCommandValidator : AbstractValidator<UpdateLocaliz
     {
         RuleFor(x => x.Categoria)
             .NotEmpty().WithMessage("Categoria é obrigatório");
+
+        RuleFor(x => x.Categoria)
+          .Must(VerificarCategoriaExiste).WithMessage("Categoria é inválida");
     }
 
     public void ValidateLongitude()
@@ -102,6 +105,13 @@ public class UpdateLocalizacaoCommandValidator : AbstractValidator<UpdateLocaliz
     private bool BeValidLatitude(double value)
     {
         return value >= -90 && value <= 90;
+    }
+
+    private bool VerificarCategoriaExiste(int categoria)
+    {
+        var categorias = Categoria.AllCategories;
+
+        return categorias.Any(c => c.Value == categoria);        
     }
 }
 
