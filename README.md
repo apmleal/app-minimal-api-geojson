@@ -89,6 +89,15 @@ http://localhost:5555/scalar/v1
 ```
 
 ## Rotas da Aplicação
-> GET /localizacao/geojson
+- Listagem de Localização
+  > GET /localizacao/geojson
+- Obger uma localização por meio do seu identificador
+  > GET /localizacao/{id}
+- Criar uma localização com um ponto geográfico
+  > POST /localizacao
+- Alterar os dados de uma localização
+  > PUT /localizacao/{id}
+- Deletar uma localização
+  > DELETE /localizacao/{id}
 
 
