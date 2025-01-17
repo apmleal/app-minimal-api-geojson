@@ -17,7 +17,9 @@ public static class CategoriaEndpoints
         builder.MapMethods(GetCategorias.Pattern, GetCategorias.Methods, GetCategorias.Handle)
             .Produces(200)
             .Produces<IDictionary<string, IEnumerable<string>>>(400)
-            .Produces<ProblemDetails>(500);
+            .Produces<ProblemDetails>(500)
+            .WithName("Categorias")
+            .WithSummary("Rota para listagem básica das informações de categorias");
 
 
         return builder;

@@ -17,7 +17,6 @@ public static class ServiceExtensions
     {
         services.AddOpenApi();
 
-
         services.ConfigureHttpJsonOptions(options =>
         {
             options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
