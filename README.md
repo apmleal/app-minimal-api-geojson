@@ -34,8 +34,8 @@ Para instalar e executar o projeto, siga estes passos:
 git clone https://github.com/apmleal/prova-havira-geojson.git
 ```
 
-## Executar via Docker > Passo 2
-## Execuiar via dotnet > Passo ?
+Executar via Docker > Passo 2
+Execuiar via dotnet > Passo ?
 
 2. Navegue até o diretório do docker:
 
