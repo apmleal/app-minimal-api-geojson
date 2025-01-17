@@ -30,4 +30,6 @@ Para instalar o projeto, siga estes passos:
 
 1. Clone o repositório:
 
-```bash git clone https://github.com/apmleal/prova-havira-geojson.git```
+```bash 
+git clone https://github.com/apmleal/prova-havira-geojson.git
+```
