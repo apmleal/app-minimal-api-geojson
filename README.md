@@ -69,7 +69,7 @@ ou
 docker-compose -p docker-prova -f .\docker-compose.yml down -v
 ```
 
-### Execuiar via dotnetrun
+### Execuiar via dotnet run
 
 1. Navegue até o diretório do projeto Prova.Api:
 
@@ -87,5 +87,8 @@ dotnet run Prova.Api.csproj urls=http://localhost:5555
 ```bash 
 http://localhost:5555/scalar/v1
 ```
+
+## Rotas da Aplicação
+> GET /localizacao/geojson
 
 
