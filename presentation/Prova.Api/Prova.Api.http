@@ -1,0 +1,47 @@
+@baseUrl = http://localhost:5006
+
+### @name get_ocalizações
+
+GET {{baseUrl}}/localizacao
+Accept: application/json
+
+### @name create_localizacao
+
+POST {{baseUrl}}/localizacao
+Content-Type: application/json
+{
+  "nome": "11",
+  "categoria": 1,
+  "longitude": -48.0688181,
+  "latitude": -16.020373
+}
+
+### @name get_pontos_localizacao
+
+GET {{baseUrl}}/localizacao/geojson
+Content-Type: application/json
+
+### @name get_localizacao_poir_id
+
+GET {{baseUrl}}/localizacao/f8ebcc79-e8ee-4a70-82b3-7ba4641ce29a
+Content-Type: application/json
+
+### @name update_localizacao
+
+PUT {{baseUrl}}/localizacao/f8ebcc79-e8ee-4a70-82b3-7ba4641ce29a
+Content-Type: application/json
+{
+  "nome": "112",
+  "categoria": 1,
+  "longitude": -45.0688181,
+  "latitude": -17.020373
+}
+
+### @name update_localizacao
+
+DELETE {{baseUrl}}/localizacao/15e591f3-30fa-4860-8ed8-40b1d8bc2ef5
+
+### Rotas para a Categoria
+
+GET {{baseUrl}}/categoria
+Accept: application/json

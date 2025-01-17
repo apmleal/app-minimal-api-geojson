@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{83F89252-66CC-4ECB-BB4F-165360BF63DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{55990F57-47AA-42DA-BE35-7415154A71E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova.Api", "presentation\Prova.Api\Prova.Api.csproj", "{3897AA40-BD25-4730-9CDC-C4AAC4FE83CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6F6B9C44-322C-483D-B3FB-0117B1F8A941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova.Domain", "src\Prova.Domain\Prova.Domain.csproj", "{F4B0BF6C-292F-478B-BBF5-6EC8FA6D8CA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{6D116931-AF63-4367-AB29-E2AF8B57168A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova.Database", "src\Prova.Database\Prova.Database.csproj", "{7C3FD086-5A7A-4257-80D2-295F1FEC1B8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prova.Application", "presentation\Prova.Application\Prova.Application.csproj", "{35FFCDEC-97F8-49DF-B406-8324C5C3CF45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3897AA40-BD25-4730-9CDC-C4AAC4FE83CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3897AA40-BD25-4730-9CDC-C4AAC4FE83CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3897AA40-BD25-4730-9CDC-C4AAC4FE83CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3897AA40-BD25-4730-9CDC-C4AAC4FE83CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B0BF6C-292F-478B-BBF5-6EC8FA6D8CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B0BF6C-292F-478B-BBF5-6EC8FA6D8CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B0BF6C-292F-478B-BBF5-6EC8FA6D8CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B0BF6C-292F-478B-BBF5-6EC8FA6D8CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3FD086-5A7A-4257-80D2-295F1FEC1B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3FD086-5A7A-4257-80D2-295F1FEC1B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3FD086-5A7A-4257-80D2-295F1FEC1B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3FD086-5A7A-4257-80D2-295F1FEC1B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FFCDEC-97F8-49DF-B406-8324C5C3CF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FFCDEC-97F8-49DF-B406-8324C5C3CF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FFCDEC-97F8-49DF-B406-8324C5C3CF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FFCDEC-97F8-49DF-B406-8324C5C3CF45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3897AA40-BD25-4730-9CDC-C4AAC4FE83CD} = {83F89252-66CC-4ECB-BB4F-165360BF63DE}
+		{6F6B9C44-322C-483D-B3FB-0117B1F8A941} = {55990F57-47AA-42DA-BE35-7415154A71E2}
+		{F4B0BF6C-292F-478B-BBF5-6EC8FA6D8CA5} = {6F6B9C44-322C-483D-B3FB-0117B1F8A941}
+		{6D116931-AF63-4367-AB29-E2AF8B57168A} = {55990F57-47AA-42DA-BE35-7415154A71E2}
+		{7C3FD086-5A7A-4257-80D2-295F1FEC1B8C} = {6D116931-AF63-4367-AB29-E2AF8B57168A}
+		{35FFCDEC-97F8-49DF-B406-8324C5C3CF45} = {83F89252-66CC-4ECB-BB4F-165360BF63DE}
+	EndGlobalSection
+EndGlobal

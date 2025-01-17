@@ -1,0 +1,20 @@
+services:
+  postgres-sit:
+    image: kartoza/postgis:13-3.1
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db_prova
+    volumes:
+      - "pg-data-prova:/var/lib/postgresql"      
+    networks:
+      - prova 
+
+volumes:
+  pg-data-prova:
+    driver: local  
+networks:
+  prova:
+    name: prova.networks
