@@ -19,6 +19,8 @@ Este projeto visa desmonstrar os conhecimentos de desenvolvimento em c# e dotnet
 ### Backend
 - Minimal API com c# e .NET 9
 - EntityFrameworkCore
+- OpenApi com Scalar.AspnetCore
+- CQRS
 - GeoJSON
 - Postgres com PostGIS
 - Docker
