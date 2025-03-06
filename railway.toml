@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "./presentation/Prova.Api/Dockerfile"
+
+[deploy]
+startCommand = "./presentation/Prova.Api/"
+restartPolicyType = "always"
+healthCheckPath = "/health"

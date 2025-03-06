@@ -24,10 +24,9 @@ services:
       - ConnectionStrings__DefaultConnection=Server=postgres-prova;Port=5432;Database=db_prova;User Id=postgres;Password=postgres;Persist Security Info=True;
     volumes:
       - ../src/Prova.Api:/app/build
-    restart: on-failure:10
+    restart: on-failure:15
     networks:
       - prova
-    command: ["wait-for-it.sh", "postgres-prova:5432", "--", "dotnet", "Prova.Api.dll"]
 
 volumes:
   pg-data-prova:

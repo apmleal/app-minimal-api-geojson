@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prova.Database.EntityConfigurations;
-using Prova.Domain;
 
 namespace Prova.Database;
 
